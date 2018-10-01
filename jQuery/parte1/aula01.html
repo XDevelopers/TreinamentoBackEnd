@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>jQuery Aula01</title>
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript">
+            //Window.onload, criando onclick na tag a
+            $(document).ready(function(){
+                $("a").click(function(){
+                    $("#titulo").css("color", "#0000FF");
+                });
+            })
+        </script>
+    </head>
+    <body>
+        <h1 id="titulo">Hello World!</h1>
+        <a href="#">Executar JavaScript</a>
+    </body>
+</html>
+ 

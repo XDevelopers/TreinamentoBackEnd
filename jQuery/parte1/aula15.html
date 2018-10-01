@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>jQuery Aula15</title>
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/aula/15.js"></script>
+        <style>
+            #formulario{
+                background-color: #ccc;
+            }
+            #msg{font: 20px verdana; border: 2px dashed black; width: 200px; height: 100px; background-color: #ccc; margin-bottom: 10px;}
+        </style>
+    </head>
+    <body>
+        <div id="msg"></div>
+        <form id="formulario">
+            <fieldset>
+                <legend>Formulario</legend>
+                <div>
+                    Text: <input type="text">
+                </div>
+                <div>
+                    Select:
+                    <select id="pais">
+                        <option value="BR" selected="selected">Brasil</option>
+                        <option>China</option>
+                        <option>EUA</option>
+                        <option disabled>Japão</option>
+                        <option disabled="disabled">Argentina</option>
+                    </select>
+                </div>
+                <div>
+                    Textarea:<br>
+                    <textarea rows="6" cols="40" tabindex="1">Escreva aqui...</textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
+ 
