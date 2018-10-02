@@ -2,22 +2,28 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>jQuery UI - Introdução a jQueryUI</title>
+        <title>jQuery UI - Resize</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="js/jquery-ui.min.js"></script>
         <script type="text/javascript">
             $(function(){
-                $("#date").datepicker();
+                
+                $("#resizable").resizable();
+                $("#resizable2").resizable();
             });
         </script>
         <style>
-            
+            #resizable{width: 150px; height: 150px; padding: 0.5em;}
+            #resizable h3{text-align: center; margin: 0;}
         </style>
     </head>
     <body>
-        Date: <input type="text" id="date">
+        <div id="resizable" class="ui-widget-content">
+            <h3 class="ui-widget-header">Resizable</h3>
+        </div>
+
+        <textarea id="resizable2" rows="5" cols="20"></textarea>
     </body>
 </html>
- 

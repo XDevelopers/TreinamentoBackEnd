@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>jQuery UI - Button</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $("a").button({
+                    icons: {primary: "ui-icon-lightbulb"},
+                    text: false
+                });
+
+                $("#checks").buttonset();
+                $("#radios").buttonset();
+
+            });
+        </script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <a href="#">Botão A</a><br>
+
+        <div id="checks">
+            <input type="checkbox" id="checkboxX"><label for="checkboxX">X</label>
+            <input type="checkbox" id="checkboxT"><label for="checkboxT">T</label>
+            <input type="checkbox" id="checkboxI"><label for="checkboxI">I</label>
+        </div>
+        <br>
+        <div id="radios">
+            <input type="radio" id="radio1" name="radioss">Homem
+            <input type="radio" id="radio2" name="radioss">Mulher
+        </div>
+    </body>
+</html>

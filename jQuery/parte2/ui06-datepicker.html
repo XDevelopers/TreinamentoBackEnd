@@ -2,14 +2,20 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>jQuery UI - Introdução a jQueryUI</title>
+        <title>jQuery UI - DatePicker</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="js/jquery-ui.min.js"></script>
         <script type="text/javascript">
             $(function(){
-                $("#date").datepicker();
+                // $("#date").datepicker({
+                //     showOn: "button",
+                //     buttonImage: "img/calendar.gif",
+                //     buttonImageOnly: true
+                // });
+
+                $("#date").datepicker($.datepicker.regional["pt-BR"]);
             });
         </script>
         <style>
@@ -17,7 +23,6 @@
         </style>
     </head>
     <body>
-        Date: <input type="text" id="date">
+        <p>Date: <input type="text" id="date"></p>
     </body>
 </html>
- 

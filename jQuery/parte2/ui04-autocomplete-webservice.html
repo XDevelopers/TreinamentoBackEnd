@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>jQuery UI - Autocomplete</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $("#city").autocomplete({
+                    source: function(request, response){
+                        $.ajax({
+                            url:"http://api.geonames.org/searchJSON",
+                            dataType:"jsonp",
+                            data: {
+                                username: "jsoiel",
+                                featureClass:"P",
+                                style:"full",
+                                maxRows:12,
+                                name_startsWith: request.term
+                            },
+                            success: function(data){
+                                response($.map( data.geonames, function(item){
+                                    return{
+                                        label: item.name + (item.adminName1 ? ", " 
+                                        + item.adminName1 : "") + ", " + item.countryName,
+                                        value: item.name
+                                    }
+                                }));
+                            }
+                        });
+                    },
+                    minLength: 2
+                });
+            });
+        </script>
+        <style>
+            .ui-autocomplete-loading{
+                background: white url('img/ajax.gif') right center no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <label for="city">Cidade: </label>
+            <input type="text" id="city">
+        </div>
+    </body>
+</html>

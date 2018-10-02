@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $("tbody tr:not(.sub)").hide();
     $(".sub th").prepend("<img src='img/mais.jpg' class='maismenos'/>");
+
     $("img").click(function(){
         if($(this).attr("src") == "img/menos.png"){
             $(this).attr("src", "img/mais.jpg")
@@ -8,8 +9,6 @@ $(document).ready(function(){
         }else{
             $(this).attr("src", "img/menos.png")
             .parents().siblings("tr").show();
-            console.log($(this).attr("src", "img/menos.png")
-            .parents().siblings("tr"));
         }
     });
 });

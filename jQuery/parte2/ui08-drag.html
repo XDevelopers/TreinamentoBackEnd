@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>jQuery UI - Drag</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+               $("#drag").draggable();
+               $("#drop").droppable({
+                   drop: function(event, ui){
+                       $(this).addClass("ui-state-highlight")
+                       .find("p").html("Colocado!!!");
+                   }
+               });
+            });
+        </script>
+        <style>
+            #drag{border: 2px solid black; width: 100px; height: 100px; float: left;}
+            #drop{border: 2px solid black; width: 150px; height: 150px; float: left;}
+        </style>
+    </head>
+    <body>
+        <div id="drag">
+            <p>Leve-me para o Alvo</p>
+        </div>
+        <div id="drop">
+                <p>Coloque aqui o elemento arrastável</p>
+            </div>
+    </body>
+</html>

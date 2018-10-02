@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>jQuery Plugins - Validação de Formulários</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <!-- <script type="text/javascript" src="js/plugins/jquery.validate.min2.js"></script> -->
+        <script type="text/javascript" src="js/plugins/jquery.validate2.js"></script>
+        
+        <script type="text/javascript">
+            $(function(){
+                $("formulario").validate();
+            });
+        </script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <form id="formulario">
+            <fieldset>
+                <div>
+                    <label for="nome">Nome</label><br>
+                    <input type="text" name="nome" class="required">
+                </div>
+                <div>
+                    <label for="email">E-Mail</label><br>
+                    <input type="text" name="email" class="required">
+                </div>
+                <input type="submit" value="Gravar">
+            </fieldset>
+        </form>
+    </body>
+</html>
