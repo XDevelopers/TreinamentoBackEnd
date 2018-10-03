@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>jQuery Plugins - TreeView</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/plugins/treeview/jquery.treeview.js"></script>
+        <link type="text/css" rel="stylesheet" href="js/plugins/treeview/jquery.treeview.css">
+        <script type="text/javascript">
+            $(function(){
+                $("#browser").treeview();
+            });
+        </script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <ul class="filetree treeview" id="browser">
+            <li class="collapsable"><div class="hitarea collapsable-hitarea"></div><span class="folder">Folder 1</span>
+                <ul>
+                    <li class="last"><span class="file">Item 1.1</span></li>
+                </ul>
+            </li>
+            <li class="collapsable"><div class="hitarea collapsable-hitarea"></div><span class="folder">Folder 2</span>
+                <ul>
+                    <li class="collapsable"><div class="hitarea collapsable-hitarea"></div><span class="folder">Subfolder 2.1</span>
+                        <ul id="folder21">
+                            <li><span class="file">File 2.1.1</span></li>
+                            <li class="last"><span class="file">File 2.1.2</span></li>
+                        </ul>
+                    </li>
+                    <li class="last"><span class="file">File 2.2</span></li>
+                </ul>
+            </li>
+            <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div><span class="folder">Folder 3(closed at start)</span>
+                <ul style="display: none;">
+                    <li class="last"><span class="file">File 3.1</span></li>
+                </ul>
+                <li class="last"><span class="file">File 4</span></li>
+            </li>
+        </ul>
+    </body>
+</html>

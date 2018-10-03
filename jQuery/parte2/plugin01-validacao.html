@@ -5,12 +5,17 @@
         <title>jQuery Plugins - Validação de Formulários</title>
         <meta charset="utf-8">
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-        <!-- <script type="text/javascript" src="js/plugins/jquery.validate.min2.js"></script> -->
-        <script type="text/javascript" src="js/plugins/jquery.validate2.js"></script>
-        
+        <script type="text/javascript" src="js/plugins/jquery.validate.min.js"></script>
         <script type="text/javascript">
             $(function(){
-                $("formulario").validate();
+                $("#formulario").validate({
+                    messages:{
+                        email:{
+                            required: "Email Obrigatório",
+                            email: "Email Invalido"
+                        }
+                    }
+                });
             });
         </script>
         <style>
@@ -22,11 +27,11 @@
             <fieldset>
                 <div>
                     <label for="nome">Nome</label><br>
-                    <input type="text" name="nome" class="required">
+                    <input type="text" id="nome" name="nome" class="required">
                 </div>
                 <div>
                     <label for="email">E-Mail</label><br>
-                    <input type="text" name="email" class="required">
+                    <input type="text" name="email" class="required email">
                 </div>
                 <input type="submit" value="Gravar">
             </fieldset>

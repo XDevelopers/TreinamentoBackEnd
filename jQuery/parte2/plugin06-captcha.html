@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>jQuery Plugins - Captcha</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/plugins/buttonCaptcha/jquery.buttonCaptcha.js"></script>
+        <link type="text/css" rel="stylesheet" href="js/plugins/buttonCaptcha/jquery.buttonCaptcha.styles.css">
+        <script type="text/javascript">
+            $(function(){
+                $("#demo").buttonCaptcha({
+                    // codeWord: "xti",
+                    codeWord: 5,
+                    codeZone: false,
+                    captchaHeader: "Você é um robo?",
+                    captchaTip: "Arraste as letras da esquerda para a direita, para escrever a palavra '%code_word%'. Obrigado!",
+                    captchaUnlocked: "Desbloqueado"
+                });
+            });
+        </script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <button id="demo" type="button" onclick="alert('protegido!')">Botão</button>
+    </body>
+</html>
