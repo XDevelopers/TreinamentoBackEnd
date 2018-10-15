@@ -1,0 +1,18 @@
+Aula 24
+https://www.youtube.com/watch?v=vKYLSXX7EM8&index=24&list=PLHlHvK2lnJndvvycjBqQAbgEDqXxKLoqn
+
+Adre Baltieri
+https://www.youtube.com/watch?v=0tXnUrAx0nE&list=PLLTWMs7ZCUZMq-C1B4LwSTXgfrQl5gdis
+
+Kerplunk Programando
+https://www.youtube.com/watch?v=WYmJEI4M2Pk&list=PLxKqk8K6a4TwCH-fyVazdAAXrzmlhBX8C
+
+
+Banco de dados
+https://mlab.com
+
+Conectar no banco
+Robo 3T
+
+Testes de API
+Postman
