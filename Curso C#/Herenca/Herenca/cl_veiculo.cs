@@ -10,7 +10,7 @@ namespace Herenca
         public string cor { get; set; }
         public string marca { get; set; }
 
-        abstract public void Acelerar();
+         public abstract void Acelerar();
 
         public virtual void Parar()
         {
