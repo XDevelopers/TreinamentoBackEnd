@@ -39,12 +39,20 @@ namespace Classes
             //p1.Falar();
             //p1.Correr();
 
-            pessoa p1 = new pessoa();
-            p1.nome = "Josiel";
-            p1.apelido = "Alves";
+            //pessoa p1 = new pessoa();
+            //p1.nome = "Josiel";
+            //p1.apelido = "Alves";
 
-            //identificar-se
-            p1.IdentificarSe();
+            ////identificar-se
+            //p1.IdentificarSe();
+
+            //int i = 0, j = 0;
+            //decimal k = 2342.34m;
+            //Console.WriteLine(k);
+
+            int[] array = new int[9] { -1, 100, 53, 23, 45, 13, 97, 34, 85 };
+            var resultado = array.Where(x => x > 34 && x <= 85).FirstOrDefault(x => x == 34);
+            Console.WriteLine(resultado);
         }
     }
 }

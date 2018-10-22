@@ -1,0 +1,50 @@
+-Classe e Objeto
+    Conceito
+        --Classe
+            Uma classe é a abstração de um objeto com caracteristicas(atributos) e define seus comportamentos atraves de metodos.
+        --Objeto
+            Um objeto no mundo real é qualquer coisa que podemos dar um nome, em programação ele é uma instancia de uma classe
+    Uma classe pode ter apenas uma herença e varias interfaces
+    Podem ser publicas ou internas, por padrão são internal
+
+-Encapsulamento
+    O encapsulamento é a proteção dos atributos de uma classe, garantindo que o comportamento e estado de um objeto se mantenha correto.
+
+-Associação de Classes
+    Associação de classes indica quando uma classe tem um tipo de relacionamento com outra classe, exemplo, quando uma pessoa tem um carro, significa que a classe pessoa tem uma associação com a classe carro.
+
+-Herança
+    Herença é quando duas classes possui caracteristicas semelhantes, mas não são iguais, então uma classe herda essas caracteristicas da outra(atributos e metodos), sendo necessario apenas implementar as diferenças entre elas.
+    Geralmente as classes bases são chamadas de Classe Pai e as que herdam são chamadas de Classe Filha
+
+-Polimorfismo
+    Polimorfismo é a alteração do funcionamento de um metodo herdado da Classe Pai, é uma forma diferente de realizar um comportamento
+
+-Método
+    Metodos é oque definem o comportamento de um objeto, são blocos de codigos que executam funções que podem alterar os atributos do objeto
+
+-Abstração
+    Abstração é especificar os aspectos essenciais de uma classe, definindo apenas as caracteristicas que todas as classes filhas irão possuir. Uma classe abstrata não possui instancia, ela é apenas um modelo para suas filhas, onde cada filha irá completar suas funcionalidades, adicionando comportamentos especificos.
+
+-Interface
+    Interfaces é um recurso que define ações que devem ser obrigatoriamente executadas, e cada classe que implementa uma interface pode executar a ação de forma diferente.
+    As interfaces podem conter propriedades e metodos não implementados. As operações para cada metodo é realizada direto na classe que implementa a interface.
+
+-Coesão e acoplamento
+    Coesão é a responsabilidades de uma classe e de cada um de seus metodos, uma classe coesa tem responsabilidades e propositos claros e bem definidos, enquanto uma classe não coesa tem muitas responsabilidades diferentes e pouco relacionadas.
+    Acoplamento é o quanto uma classe depende da outra para funcionar
+    É sempre bom ter o maximo de coesão e o minimo de acoplamento.
+
+-Modificadores de Acesso
+    public
+        Pode ser acessado por qualquer outro código
+    private
+        Pode ser acessado somente pelo código na mesma classe.
+    protected
+        Pode ser acessado somente pelo código na mesma classe ou em uma classe filha dessa classe.
+    internal
+        Pode ser acessado por qualquer código no mesmo assembly, mas não de outro assembly.
+    protected internal 
+        Pode ser acessado por qualquer código no assembly no qual ele é declarado ou de uma classe filha em outro assembly.
+    private protected 
+        Pode ser acessado somente dentro de seu assembly de declaração, por código na mesma classe ou em um tipo que é derivado dessa classe.

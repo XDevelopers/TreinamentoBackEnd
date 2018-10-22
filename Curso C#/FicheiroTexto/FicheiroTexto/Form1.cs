@@ -37,7 +37,11 @@ namespace FicheiroTexto
 
         private void button2_Click(object sender, EventArgs e)
         {
-            StreamReader ficheiro = new StreamReader(@"C:\Users\josiel.alves\Desktop\file.txt");
+            StreamReader ficheiro = new StreamReader(@"C:\Users\josiel.alves\Desktop\file.txt", Encoding.Default);
+            lista.Items.Add(ficheiro.ReadToEnd());
+            while (!ficheiro.EndOfStream) {
+                lista.Items.Add(ficheiro.ReadLine());
+            }
             ficheiro.Dispose();
         }
     }
