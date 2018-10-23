@@ -1,0 +1,8 @@
+https://www.youtube.com/watch?v=637dNrwnmlw&list=PLR8OzKI52ppX0c3RjjhcWA3GzUxkXaOEj&index=1
+
+http://www.luiztools.com.br/post/autenticacao-json-web-token-jwt-em-nodejs/
+
+https://medium.freecodecamp.org/securing-node-js-restful-apis-with-json-web-tokens-9f811a92bb52
+
+https://scotch.io/tutorials/authenticate-a-node-js-api-with-json-web-tokens
+

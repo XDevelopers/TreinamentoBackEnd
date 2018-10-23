@@ -75,7 +75,6 @@ exports.authenticate = async (req, res, next) => {
             message: 'Falha ao processar sua requisição'
         });
     }
-
 };
 
 exports.refreshToken = async (req, res, next) => {
